@@ -13,8 +13,8 @@ pipeline{
         }
 	stage("Git clone"){
 	    steps{
-		sh 'rm -rf hello-world'
-		sh 'git clone https://github.com/jaysurya1697/hello-world.git'
+		sh 'sudo rm -rf hello-world'
+		sh 'sudo git clone https://github.com/jaysurya1697/hello-world.git'
 		sh 'pwd'
 		sh 'ls -lrt'
 		sh 'cd hello-world/'
