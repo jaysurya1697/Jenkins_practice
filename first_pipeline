@@ -15,9 +15,7 @@ pipeline{
 	    steps{
 		sh 'rm -rf hello-world'
 		sh 'git clone https://github.com/jaysurya1697/hello-world.git'
-		sh 'ls -lrt'
-  		sh 'cd hello-world'
-		sh 'ls -lrt'
+		sh 'pwd'
 	    }
 	}
 }
