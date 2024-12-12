@@ -13,9 +13,9 @@ pipeline{
         }
 	stage("Git clone"){
 	    steps{
-		git clone https://github.com/jaysurya1697/hello-world.git
-		git remote add origin https://github.com/jaysurya1697/hello-world.git
-		ls -lrt
+		sh 'git clone https://github.com/jaysurya1697/hello-world.git'
+		sh 'git remote add origin https://github.com/jaysurya1697/hello-world.git'
+		sh 'ls -lrt'
 	    }
 	}
 }
