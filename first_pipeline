@@ -14,7 +14,6 @@ pipeline{
 	stage("Git clone"){
 	    steps{
 		sh 'git clone https://github.com/jaysurya1697/hello-world.git'
-		# sh 'git remote add origin https://github.com/jaysurya1697/hello-world.git'
 		sh 'ls -lrt'
   		sh 'cd hello-world'
 	    }
