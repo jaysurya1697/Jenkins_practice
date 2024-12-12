@@ -11,5 +11,11 @@ pipeline{
                 echo "Bye Bye Jay! Have a nice day!"
             }
         }
-    }
+	stage("Git clone"){
+	    steps{
+		git clone https://github.com/jaysurya1697/hello-world.git
+		git remote add origin https://github.com/jaysurya1697/hello-world.git
+		ls -lrt
+	    }
+	}
 }
